@@ -257,6 +257,8 @@
         gradient==2.0.6
     RUN $PIP_INSTALL attrs==23.1.0
 
+    RUN $PIP_INSTALL fastai
+
 
 # ==================================================================
 # Installing JRE and JDK
