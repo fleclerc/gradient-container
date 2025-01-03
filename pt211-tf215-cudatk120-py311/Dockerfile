@@ -217,7 +217,7 @@
 
     # Based on https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html#pip
 
-    $PIP_INSTALL jupyterlab
+    $PIP_INSTALL jupyterlab==3.6.5
 
 
 # ==================================================================
@@ -230,7 +230,7 @@
         scikit-image==0.21.0 \
         scikit-learn==1.3.0 \
         matplotlib==3.7.3 \
-        ipywidgets \
+        ipywidgets==8.1.1 \
         cython==3.0.2 \
         tqdm==4.66.1 \
         gdown==4.7.1 \
@@ -285,7 +285,7 @@
 
     RUN curl -sL https://deb.nodesource.com/setup_20.x | bash  && \
         $APT_INSTALL nodejs  && \
-        $PIP_INSTALL jupyter_contrib_nbextensions jupyterlab-git && \
+        $PIP_INSTALL jupyter_contrib_nbextensions==0.7.0 jupyterlab-git==0.43.0 && \
         jupyter contrib nbextension install --user
                 
 
